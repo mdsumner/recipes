@@ -33,7 +33,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        os: [ 'macos-13', 'macos-14' ]
+        os: [ 'macos-15-intel', 'macos-14' ]
 
     steps:
       - uses: actions/checkout@v2
@@ -112,4 +112,4 @@ jobs:
           name: dist-darwin${{ env.OS_VER }}-${{ env.ARCH }}
           path: dist
           compression-level: 0
-          retention-days: 3
+          retention-days: 14

@@ -1,6 +1,6 @@
-diff -ru gdal-3.10.1/cmake/template/gdal-config.in gdal-3.10.1-2/cmake/template/gdal-config.in
---- gdal-3.10.1/cmake/template/gdal-config.in	2025-01-09 03:54:05
-+++ gdal-3.10.1-2/cmake/template/gdal-config.in	2025-02-08 23:28:02
+diff -ru gdal-3.12.4/cmake/template/gdal-config.in gdal-3.12.4/cmake/template/gdal-config.in
+--- gdal-3.12.4/cmake/template/gdal-config.in	2026-07-12 03:07:46.827923176 +0000
++++ gdal-3.12.4-1/cmake/template/gdal-config.in	2026-07-12 03:07:46.834447810 +0000
 @@ -1,5 +1,5 @@
  #!/bin/sh
 -CONFIG_LIBS="@CONFIG_LIBS@"
@@ -8,18 +8,18 @@ diff -ru gdal-3.10.1/cmake/template/gdal-config.in gdal-3.10.1-2/cmake/template/
  CONFIG_DEP_LIBS="@CONFIG_DEP_LIBS@"
  CONFIG_PREFIX="@CONFIG_PREFIX@"
  CONFIG_CFLAGS="@CONFIG_CFLAGS@"
-diff -ru gdal-3.10.1/cmake/template/gdal.pc.in gdal-3.10.1-2/cmake/template/gdal.pc.in
---- gdal-3.10.1/cmake/template/gdal.pc.in	2025-01-09 03:54:05
-+++ gdal-3.10.1-2/cmake/template/gdal.pc.in	2025-02-08 23:27:09
+diff -ru gdal-3.12.4/cmake/template/gdal.pc.in gdal-3.12.4/cmake/template/gdal.pc.in
+--- gdal-3.12.4/cmake/template/gdal.pc.in	2026-07-12 03:07:46.830095409 +0000
++++ gdal-3.12.4-1/cmake/template/gdal.pc.in	2026-07-12 03:07:46.834447810 +0000
 @@ -15,3 +15,4 @@
  Libs: ${CONFIG_INST_LIBS}
  Libs.private: @CONFIG_DEP_LIBS@
  Cflags: ${CONFIG_INST_CFLAGS}
-+Requires.private: libpq libtiff-4 netcdf
-diff -ru gdal-3.10.1/frmts/hdf5/CMakeLists.txt gdal-3.10.1-2/frmts/hdf5/CMakeLists.txt
---- gdal-3.10.1/frmts/hdf5/CMakeLists.txt	2025-01-09 03:54:06
-+++ gdal-3.10.1-2/frmts/hdf5/CMakeLists.txt	2025-02-08 22:45:07
-@@ -94,7 +94,9 @@
++Requires.private: libpq libtiff-4 netcdf libcurl
+diff -ru gdal-3.12.4/frmts/hdf5/CMakeLists.txt gdal-3.12.4/frmts/hdf5/CMakeLists.txt
+--- gdal-3.12.4/frmts/hdf5/CMakeLists.txt	2026-07-12 03:07:46.831703978 +0000
++++ gdal-3.12.4-1/frmts/hdf5/CMakeLists.txt	2026-07-12 03:07:47.072998186 +0000
+@@ -115,7 +115,9 @@
    target_compile_definitions(gdal_HDF5 PRIVATE -DWIN32)
  endif ()
  target_include_directories(gdal_HDF5 SYSTEM PRIVATE ${HDF5_INCLUDE_DIRS})

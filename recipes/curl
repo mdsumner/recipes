@@ -1,0 +1,8 @@
+Package: curl
+Version: 8.20.0
+Depends: pkgconfig, openssl
+Source-URL: https://curl.se/download/curl-${ver}.tar.gz
+Source-SHA256: fc5819cad3f9f5482669adcdc49a782c15f36d2a0715b395b06d9173593d2dc0
+#Note: static libcurl so that GDAL >= 3.9 (needs curl >= 7.68) does not depend on the SDK/system curl which is too old on Big Sur and older targets
+#Note: TLS backend is the openssl recipe (curl 8.15+ removed Secure Transport); macOS ships CA certs at /etc/ssl/cert.pem matching the openssl recipe openssldir
+Configure: --with-openssl --with-ca-bundle=/etc/ssl/cert.pem --without-libpsl --without-brotli --without-zstd --without-nghttp2 --without-libidn2 --disable-ldap --disable-ldaps
