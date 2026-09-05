@@ -1,0 +1,109 @@
+:root {
+  --bg: #faf7f2;
+  --fg: #2b2620;
+  --muted: #6f665c;
+  --accent: #b5542a;
+  --line: #e4ddd2;
+  --card: #ffffff;
+  --tag: #efe7dc;
+  --tag-on: #b5542a;
+  --tag-on-fg: #ffffff;
+  --max: 46rem;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1c1a17;
+    --fg: #ece6dd;
+    --muted: #a69c8f;
+    --accent: #e08a5a;
+    --line: #34302a;
+    --card: #24211d;
+    --tag: #322d27;
+  }
+}
+* { box-sizing: border-box; }
+html { color-scheme: light dark; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 17px/1.55 Georgia, "Iowan Old Style", "Palatino Linotype", serif;
+  -webkit-text-size-adjust: 100%;
+}
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+.top {
+  display: flex; justify-content: space-between; align-items: baseline;
+  max-width: var(--max); margin: 0 auto; padding: 1rem 1.25rem 0;
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+  font-size: .9rem;
+}
+.brand { font-weight: 700; letter-spacing: .04em; text-transform: uppercase; color: var(--fg); }
+.gh { color: var(--muted); }
+main { max-width: var(--max); margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+footer {
+  max-width: var(--max); margin: 0 auto; padding: 0 1.25rem 2rem;
+  color: var(--muted); font-size: .85rem;
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+h1 { font-size: 2rem; line-height: 1.15; margin: .5rem 0 .25rem; font-weight: 600; }
+h2 { font-size: 1.15rem; margin: 1.75rem 0 .5rem; font-weight: 600;
+     text-transform: uppercase; letter-spacing: .06em; color: var(--muted);
+     font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif; }
+.lead { color: var(--muted); margin-top: 0; }
+.meta { color: var(--muted); font-size: .95rem; margin: 0; }
+.meta span + span::before { content: "\00b7"; margin: 0 .45em; }
+.tags { margin: .35rem 0 0; line-height: 2; }
+.tag {
+  display: inline-block; padding: 0 .6rem; margin-right: .3rem;
+  border-radius: 999px; background: var(--tag); color: var(--fg);
+  font-size: .8rem; line-height: 1.7;
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.tag:hover { text-decoration: none; background: var(--line); }
+.tag.on { background: var(--tag-on); color: var(--tag-on-fg); }
+
+/* index */
+#q {
+  width: 100%; font: inherit; font-size: 1.05rem; padding: .6rem .8rem;
+  border: 1px solid var(--line); border-radius: .5rem; background: var(--card); color: var(--fg);
+  margin: 1rem 0 .5rem;
+}
+.tagbar { margin: 0 0 1rem; }
+.cards { list-style: none; padding: 0; margin: 0; display: grid; gap: .75rem;
+         grid-template-columns: repeat(auto-fill, minmax(17rem, 1fr)); }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: .6rem; padding: .9rem 1rem; }
+.card h2 { margin: 0 0 .25rem; text-transform: none; letter-spacing: 0; color: var(--fg);
+           font-family: inherit; font-size: 1.2rem; }
+.card[hidden] { display: none; }
+.none { color: var(--muted); }
+
+/* recipe */
+.recipe .toolbar { margin: 1rem 0 0; display: flex; gap: .5rem; flex-wrap: wrap; }
+.recipe button {
+  font: inherit; font-size: .85rem; padding: .3rem .7rem; border-radius: .4rem;
+  border: 1px solid var(--line); background: var(--card); color: var(--fg); cursor: pointer;
+  font-family: system-ui, -apple-system, "Segoe UI", Helvetica, Arial, sans-serif;
+}
+.recipe button.on { border-color: var(--accent); color: var(--accent); }
+.recipe ul { padding-left: 0; list-style: none; }
+.recipe ul li { padding: .25rem 0; }
+.recipe ul li:has(> input[type=checkbox]) { padding-left: 1.9rem; position: relative; }
+.recipe ul li input[type=checkbox] {
+  position: absolute; left: .1rem; top: .5rem; width: 1.15rem; height: 1.15rem; accent-color: var(--accent);
+}
+.recipe ul li.done { color: var(--muted); text-decoration: line-through; }
+.recipe ol { padding-left: 1.5rem; }
+.recipe ol li { padding: .3rem 0 .3rem .3rem; }
+.recipe ol li::marker { color: var(--accent); font-weight: 600; }
+.recipe ol li.done { color: var(--muted); }
+.recipe ol li { cursor: pointer; }
+.source { margin-top: 2rem; color: var(--muted); font-size: .9rem; }
+p + p { margin-top: .4rem; }
+
+@media print {
+  .top, footer, .toolbar, .tags, #q, .tagbar { display: none; }
+  body { font-size: 12pt; background: #fff; color: #000; }
+  .recipe ul li input { display: none; }
+  .recipe ul li { padding-left: 1rem; }
+}

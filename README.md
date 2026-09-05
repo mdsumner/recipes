@@ -51,6 +51,23 @@ Front matter fields: `title`, `slug`, `source`, `site`, `harvested`,
 all land in `tags`; there are deliberately no category directories, a
 recipe is usually several things at once.
 
+## Website
+
+`site/build.py` renders `recipes/*.md` into a static site in `_site/`:
+a searchable, tag-filterable index and one page per recipe with tick-off
+ingredients, tap-to-dim steps, a keep-screen-on button for the kitchen,
+dark mode and a print stylesheet. No framework; one CSS block and a few
+lines of script inlined into each page.
+
+    pip install -r site/requirements.txt
+    python site/build.py            # then open _site/index.html
+
+The `Build and deploy site` workflow publishes it to GitHub Pages on every
+push to `main` that touches `recipes/` or `site/`, and after every
+harvester run. One-time setup: repository Settings > Pages > Source:
+**GitHub Actions**. GitHub Pages on a free account requires the repo to be
+public; see the note below before flipping it.
+
 ## A note on sources
 
 Every file links to where it came from. Ingredient lists are facts, but

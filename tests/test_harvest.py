@@ -107,3 +107,20 @@ def test_index(tmp_path, rec):
     idx = build_index(d)
     assert "2 recipes." in idx
     assert idx.index("Alpha Hand Written") < idx.index("Test Kitchen Flatbread")
+
+
+def test_site_build(tmp_path, rec):
+    import importlib.util
+    spec = importlib.util.spec_from_file_location(
+        "sitebuild", Path(__file__).parent.parent / "site" / "build.py")
+    mod = importlib.util.module_from_spec(spec)
+    spec.loader.exec_module(mod)
+    (tmp_path / "recipes").mkdir()
+    (tmp_path / "recipes" / "b.md").write_text(render(rec, "b"), encoding="utf-8")
+    n = mod.build(tmp_path, tmp_path / "_site", "./")
+    assert n == 1
+    idx = (tmp_path / "_site" / "index.html").read_text(encoding="ascii")
+    page = (tmp_path / "_site" / "r" / "b.html").read_text(encoding="ascii")
+    assert "Test Kitchen Flatbread" in idx and 'href="./r/b.html"' in idx
+    assert "<h2>Ingredients</h2>" in page and "1 1/2 tsp instant yeast" in page
+    assert page.count("Yield:") == 1
