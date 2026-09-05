@@ -16,7 +16,7 @@ jobs:
   harvest:
     # Only issues created from the "Add a recipe" form, by people with a role on the repo.
     if: >-
-         contains(github.event.issue.body, '### Recipe URL') &&
+      contains(github.event.issue.body, '### Recipe URL') &&
       contains(fromJSON('["OWNER","MEMBER","COLLABORATOR"]'), github.event.issue.author_association)
     runs-on: ubuntu-latest
     steps:
