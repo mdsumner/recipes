@@ -83,8 +83,9 @@ widely.
 |---|---|---|---|---|
 | [Butter Chicken](recipes/butter-chicken.md) | 3 - 4 | 35m | chicken, curry, indian, butter chicken | [recipetineats.com](https://www.recipetineats.com/butter-chicken/) |
 | [Crispy & sticky chicken thighs with squashed new potatoes & tomatoes](recipes/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes.md) | 4 | 1h25 | chicken, chicken thighs, main ingredient, roast chicken, potato, new potatoes, tomato, lunch & dinner recipes, course, dinner party, occasion, 20 years, tv shows, kosher for passover | [jamieoliver.com](https://www.jamieoliver.com/recipes/chicken/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes/) |
+| [Gluten-Free Meatloaf](recipes/gluten-free-meatloaf.md) | 8 servings | 1h25 | dinner, main course, american, gluten-free meatloaf | [mamaknowsglutenfree.com](https://www.mamaknowsglutenfree.com/gluten-free-meatloaf/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-4 recipes.
+5 recipes.
 <!-- recipes:end -->
