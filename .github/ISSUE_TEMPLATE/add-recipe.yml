@@ -1,0 +1,24 @@
+name: Add a recipe
+description: Paste a recipe URL. The harvester turns it into a short-form markdown page.
+title: "Add: <paste url or a short name>"
+labels: ["recipe"]
+body:
+  - type: input
+    id: url
+    attributes:
+      label: Recipe URL
+      description: The page with the recipe on it. Most recipe blogs and major sites work.
+      placeholder: https://example.com/2021/04/15/some-recipe/
+    validations:
+      required: true
+  - type: input
+    id: slug
+    attributes:
+      label: File name (optional)
+      description: Override the generated file name, e.g. "sourdough-crumpets". Lower-case letters, digits and hyphens.
+  - type: checkboxes
+    id: force
+    attributes:
+      label: Options
+      options:
+        - label: Overwrite if a recipe with this file name already exists

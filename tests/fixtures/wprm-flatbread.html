@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>Test Kitchen Flatbread - Example Blog</title>
+<script type="application/ld+json">
+{"@context":"https://schema.org","@graph":[
+ {"@type":"WebSite","@id":"https://example.test/#website","name":"Example Blog"},
+ {"@type":"Article","@id":"https://example.test/flatbread/#article","headline":"Flatbread post"},
+ {"@type":"Recipe",
+  "@id":"https://example.test/flatbread/#recipe",
+  "name":"Test Kitchen Flatbread",
+  "author":{"@type":"Person","name":"Tester"},
+  "publisher":{"@type":"Organization","name":"Example Blog"},
+  "description":"A quick pan flatbread – no oven needed.",
+  "datePublished":"2021-04-15T17:29:40+00:00",
+  "image":["https://example.test/img.png"],
+  "recipeYield":["4","4 flatbreads"],
+  "prepTime":"PT10M",
+  "cookTime":"PT12M",
+  "totalTime":"PT1H22M",
+  "recipeIngredient":[
+    "300 g plain flour",
+    "1½ tsp instant yeast",
+    "½ tsp salt",
+    "200 ml warm water",
+    "2 tbsp olive oil, divided",
+    "flaky salt"
+  ],
+  "recipeInstructions":[
+    {"@type":"HowToSection","name":"Dough","itemListElement":[
+      {"@type":"HowToStep","text":"Whisk flour, yeast &amp; salt in a bowl.","name":"Whisk"},
+      {"@type":"HowToStep","text":"Add water and 1 tbsp oil; mix 5 minutes until smooth.","name":"Mix"}
+    ]},
+    {"@type":"HowToSection","name":"Cook","itemListElement":[
+      {"@type":"HowToStep","text":"Rest 1 hour, covered.","name":"Rest"},
+      {"@type":"HowToStep","text":"Divide in 4, roll thin, cook in a hot dry pan 2–3 minutes a side (about 220°C).","name":"Cook"}
+    ]},
+    {"@type":"HowToStep","text":"Brush with remaining oil and sprinkle flaky salt.<br>Serve warm."}
+  ],
+  "recipeCategory":["Bread","Side"],
+  "recipeCuisine":["Middle Eastern"],
+  "keywords":"flatbread, quick, Gluten Free",
+  "suitableForDiet":["https://schema.org/VeganDiet"]
+ }
+]}
+</script>
+</head>
+<body>
+<h1>Flatbread post</h1>
+<p>Long narrative that should be ignored.</p>
+<div class="wprm-recipe-container">
+  <div class="wprm-recipe-notes-container">
+    <h3>Notes</h3>
+    <div class="wprm-recipe-notes">
+      <ul>
+        <li>Weigh the flour — don&#8217;t scoop.</li>
+        <li>Rest time depends on room temperature.</li>
+      </ul>
+    </div>
+  </div>
+</div>
+</body>
+</html>

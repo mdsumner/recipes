@@ -1,3 +1,17 @@
+---
+title: Gluten-Free Vegan Focaccia
+slug: gluten-free-vegan-focaccia
+source: https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/
+site: The Vegan Harvest
+harvested: '2026-09-06'
+extraction: manual
+yield: 1 loaf
+prep_min: 15
+cook_min: 40
+total_min: 145
+tags: [bread, gluten free, vegan, italian]
+---
+
 # Gluten-Free Vegan Focaccia
 
 Source: https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/
