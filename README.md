@@ -64,7 +64,8 @@ widely.
 <!-- recipes:start -->
 | Recipe | Yield | Time | Tags | Source |
 |---|---|---|---|---|
+| [Crispy & sticky chicken thighs with squashed new potatoes & tomatoes](recipes/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes.md) | 4 | 1h25 | chicken, chicken thighs, main ingredient, roast chicken, potato, new potatoes, tomato, lunch & dinner recipes, course, dinner party, occasion, 20 years, tv shows, kosher for passover | [jamieoliver.com](https://www.jamieoliver.com/recipes/chicken/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
 
-1 recipe.
+2 recipes.
 <!-- recipes:end -->
