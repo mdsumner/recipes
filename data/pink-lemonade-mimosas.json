@@ -1,0 +1,25 @@
+{
+  "name": "Pink Lemonade Mimosas",
+  "source_url": "https://yestoyolks.com/2020/06/18/pink-lemonade-mimosas/",
+  "site": "yestoyolks.com",
+  "description": "These Pink Lemonade Mimosas are the easiest, two-ingredient cocktail recipe that you never knew you needed! Light, sweet, and a touch sweet with the best pretty pink color.",
+  "yield": "Makes 4 cocktails (easily multiplied)",
+  "prep_min": 2,
+  "cook_min": null,
+  "total_min": 2,
+  "ingredients": [
+    "1 cup store-bought pink lemonade, chilled",
+    "2 cups prosecco/champagne/sparkling wine, chilled",
+    "Fresh raspberries and strawberries",
+    "Lemon slices"
+  ],
+  "steps": [
+    "Divide the pink lemonade between four champagne flutes.",
+    "Top off with the prosecco and garnish with the berries and lemon slices. Serve!"
+  ],
+  "notes": [
+    "The perfect mimosa for my taste is a 2:1 ratio of bubbly to juice. You can adjust this ratio to meet your tastes. If you like things less sweet, use more bubbly and less juice, and if you like things sweeter, add in an extra splash or two of juice."
+  ],
+  "tags": [],
+  "extraction": "jsonld"
+}
