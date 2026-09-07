@@ -84,6 +84,7 @@ widely.
 | [Basque Cheesecake](recipes/basque-cheesecake.md) | 12 |  | sweet baking, basque country, spain, basque cheesecake, burnt basque cheesecake | [recipetineats.com](https://www.recipetineats.com/basque-cheesecake/) |
 | [Butter Chicken](recipes/butter-chicken.md) | 3 - 4 | 35m | chicken, curry, indian, butter chicken | [recipetineats.com](https://www.recipetineats.com/butter-chicken/) |
 | [Crispy & sticky chicken thighs with squashed new potatoes & tomatoes](recipes/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes.md) | 4 | 1h25 | chicken, chicken thighs, main ingredient, roast chicken, potato, new potatoes, tomato, lunch & dinner recipes, course, dinner party, occasion, 20 years, tv shows, kosher for passover | [jamieoliver.com](https://www.jamieoliver.com/recipes/chicken/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes/) |
+| [Fried Rice](recipes/fried-rice.md) | 2 - 3 people | 15m | side, asian, chinese, fried rice | [recipetineats.com](https://www.recipetineats.com/egg-fried-rice/) |
 | [Gluten-Free Meatloaf](recipes/gluten-free-meatloaf.md) | 8 servings | 1h25 | dinner, main course, american, gluten-free meatloaf | [mamaknowsglutenfree.com](https://www.mamaknowsglutenfree.com/gluten-free-meatloaf/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
 | [Moist Blueberry Muffins](recipes/moist-blueberry-muffins.md) | 12 | 30m | sweet baking, western, blueberry muffins, blueberry recipes | [recipetineats.com](https://www.recipetineats.com/moist-blueberry-muffins/) |
@@ -93,5 +94,5 @@ widely.
 | [Spanish Healthy Vegetable Soup](recipes/spanish-healthy-vegetable-soup.md) | 4 -5 people | 45m | mains, soup, spanish style, western, healthy vegetable soup | [recipetineats.com](https://www.recipetineats.com/healthy-vegetable-soup/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-11 recipes.
+12 recipes.
 <!-- recipes:end -->
