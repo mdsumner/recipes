@@ -88,11 +88,12 @@ widely.
 | [Gluten-Free Meatloaf](recipes/gluten-free-meatloaf.md) | 8 servings | 1h25 | dinner, main course, american, gluten-free meatloaf | [mamaknowsglutenfree.com](https://www.mamaknowsglutenfree.com/gluten-free-meatloaf/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
 | [Moist Blueberry Muffins](recipes/moist-blueberry-muffins.md) | 12 | 30m | sweet baking, western, blueberry muffins, blueberry recipes | [recipetineats.com](https://www.recipetineats.com/moist-blueberry-muffins/) |
+| [No-bowl choc-bit slice](recipes/no-bowl-choc-bit-slice.md) | 4 | 30m |  | [womensweeklyfood.com.au](https://www.womensweeklyfood.com.au/recipe/quick-and-easy/no-bowl-choc-bit-slice-9589/) |
 | [Oven Pork Ribs with Barbecue Sauce](recipes/oven-pork-ribs-with-barbecue-sauce.md) | 6 | 2h30 | bbq, dinner, ribs, american, barbecue pork ribs, oven pork ribs, spice rub for pork ribs | [recipetineats.com](https://www.recipetineats.com/oven-baked-barbecue-pork-ribs/) |
 | [Pink Lemonade Mimosas](recipes/pink-lemonade-mimosas.md) | Makes 4 cocktails (easily multiplied) | 2m |  | [yestoyolks.com](https://yestoyolks.com/2020/06/18/pink-lemonade-mimosas/) |
 | [Slow Roasted Rosemary Garlic Lamb Shoulder](recipes/slow-roasted-rosemary-garlic-lamb-shoulder.md) | 4 - people | 3h45 | lamb, roast, western, lamb shoulder, roast lamb shoulder, slow roasted lamb | [recipetineats.com](https://www.recipetineats.com/slow-roasted-rosemary-garlic-lamb-shoulder/) |
 | [Spanish Healthy Vegetable Soup](recipes/spanish-healthy-vegetable-soup.md) | 4 -5 people | 45m | mains, soup, spanish style, western, healthy vegetable soup | [recipetineats.com](https://www.recipetineats.com/healthy-vegetable-soup/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-12 recipes.
+13 recipes.
 <!-- recipes:end -->

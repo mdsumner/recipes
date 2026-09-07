@@ -1,0 +1,27 @@
+{
+  "name": "No-bowl choc-bit slice",
+  "source_url": "https://www.womensweeklyfood.com.au/recipe/quick-and-easy/no-bowl-choc-bit-slice-9589/",
+  "site": "womensweeklyfood.com.au",
+  "description": "There's no bowl needed for this easy slice recipe. Just add the ingredients to the tin and bake.",
+  "yield": "4",
+  "prep_min": null,
+  "cook_min": 30,
+  "total_min": 30,
+  "ingredients": [
+    "90 gram butter, melted",
+    "1 cup (125g) sweet biscuit crumbs",
+    "1 1/2 cup (185g) choc bits",
+    "1 cup shredded coconut",
+    "1 cup mixed nuts, chopped",
+    "400 gram can sweetened condensed milk"
+  ],
+  "steps": [
+    "Preheat oven to 180 C (160 C fan-forced).",
+    "Grease a 23cm square slab pan, cover base with baking paper; grease paper.",
+    "Pour butter into prepared pan, sprinkle evenly with biscuits, Choc Bits, coconut and nuts. Drizzle with milk.",
+    "Bake for about 30 minutes. Cool in pan before cutting into squares; store in refrigerator."
+  ],
+  "notes": [],
+  "tags": [],
+  "extraction": "jsonld"
+}
