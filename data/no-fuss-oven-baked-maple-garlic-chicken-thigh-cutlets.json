@@ -1,0 +1,35 @@
+{
+  "name": "No Fuss Oven Baked Maple Garlic Chicken Thigh Cutlets",
+  "source_url": "https://bellyrumbles.com/oven-baked-skinless-chicken-thigh-cutlets/",
+  "site": "bellyrumbles.com",
+  "description": "Oven baked skinless chicken thigh cutlets with maple, garlic and rosemary. This recipe takes 5 minutes to prepare, then into the oven, for an easy, tasty mid week meal.",
+  "yield": "4 people",
+  "prep_min": 5,
+  "cook_min": 45,
+  "total_min": 50,
+  "ingredients": [
+    "6 skinless chicken thigh cutlets",
+    "60 ml maple syrup",
+    "2 cloves garlic (crushed)",
+    "2 teaspoons dijon mustard",
+    "1 tablespoon fresh rosemary (finely chopped)"
+  ],
+  "steps": [
+    "Pre-heat oven 180 C (360 F). Line a shallow baking tray with baking paper (this makes it easier to clean up afterwards).",
+    "Place skinless chicken thigh cutlets, bone side down, on the prepared baking tray.",
+    "In a small bowl place maple syrup, garlic, mustard and rosemary. Mix ingredients well.",
+    "Spread maple syrup mixture over the top of the thigh cutlets. Make sure to coat them well.",
+    "Place in the oven for 45 minutes or until golden and cooked through.",
+    "For best results baste thigh cutlets while cooking. Test to ensure they are cooked through by inserting a skewer into the thigh, if juices run clear, it is cooked.",
+    "Serve with oven baked vegetables or fresh garden salad."
+  ],
+  "notes": [
+    "If using chicken thigh with skin on Prick the skin of the chicken with a skewer before placing in the oven to bake. This will allow the fat underneath the skin to be released and ensure nice crisp brown chicken skin."
+  ],
+  "tags": [
+    "main course",
+    "belly rumbles original",
+    "no fuss oven baked"
+  ],
+  "extraction": "jsonld"
+}

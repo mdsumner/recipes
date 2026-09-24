@@ -88,6 +88,7 @@ widely.
 | [Gluten-Free Meatloaf](recipes/gluten-free-meatloaf.md) | 8 servings | 1h25 | dinner, main course, american, gluten-free meatloaf | [mamaknowsglutenfree.com](https://www.mamaknowsglutenfree.com/gluten-free-meatloaf/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
 | [Moist Blueberry Muffins](recipes/moist-blueberry-muffins.md) | 12 | 30m | sweet baking, western, blueberry muffins, blueberry recipes | [recipetineats.com](https://www.recipetineats.com/moist-blueberry-muffins/) |
+| [No Fuss Oven Baked Maple Garlic Chicken Thigh Cutlets](recipes/no-fuss-oven-baked-maple-garlic-chicken-thigh-cutlets.md) | 4 people | 50m | main course, belly rumbles original, no fuss oven baked | [bellyrumbles.com](https://bellyrumbles.com/oven-baked-skinless-chicken-thigh-cutlets/) |
 | [No-bowl choc-bit slice](recipes/no-bowl-choc-bit-slice.md) | 4 | 30m |  | [womensweeklyfood.com.au](https://www.womensweeklyfood.com.au/recipe/quick-and-easy/no-bowl-choc-bit-slice-9589/) |
 | [Oven Pork Ribs with Barbecue Sauce](recipes/oven-pork-ribs-with-barbecue-sauce.md) | 6 | 2h30 | bbq, dinner, ribs, american, barbecue pork ribs, oven pork ribs, spice rub for pork ribs | [recipetineats.com](https://www.recipetineats.com/oven-baked-barbecue-pork-ribs/) |
 | [Pink Lemonade Mimosas](recipes/pink-lemonade-mimosas.md) | Makes 4 cocktails (easily multiplied) | 2m |  | [yestoyolks.com](https://yestoyolks.com/2020/06/18/pink-lemonade-mimosas/) |
@@ -96,5 +97,5 @@ widely.
 | [Sticky Baked Chicken Thighs](recipes/sticky-baked-chicken-thighs.md) | 4 people | 30m | mains, baked chicken thighs, boneless skinless chicken thighs | [recipetineats.com](https://www.recipetineats.com/sticky-baked-chicken-thighs/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-14 recipes.
+15 recipes.
 <!-- recipes:end -->
