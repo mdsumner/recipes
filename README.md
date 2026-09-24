@@ -93,7 +93,8 @@ widely.
 | [Pink Lemonade Mimosas](recipes/pink-lemonade-mimosas.md) | Makes 4 cocktails (easily multiplied) | 2m |  | [yestoyolks.com](https://yestoyolks.com/2020/06/18/pink-lemonade-mimosas/) |
 | [Slow Roasted Rosemary Garlic Lamb Shoulder](recipes/slow-roasted-rosemary-garlic-lamb-shoulder.md) | 4 - people | 3h45 | lamb, roast, western, lamb shoulder, roast lamb shoulder, slow roasted lamb | [recipetineats.com](https://www.recipetineats.com/slow-roasted-rosemary-garlic-lamb-shoulder/) |
 | [Spanish Healthy Vegetable Soup](recipes/spanish-healthy-vegetable-soup.md) | 4 -5 people | 45m | mains, soup, spanish style, western, healthy vegetable soup | [recipetineats.com](https://www.recipetineats.com/healthy-vegetable-soup/) |
+| [Sticky Baked Chicken Thighs](recipes/sticky-baked-chicken-thighs.md) | 4 people | 30m | mains, baked chicken thighs, boneless skinless chicken thighs | [recipetineats.com](https://www.recipetineats.com/sticky-baked-chicken-thighs/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-13 recipes.
+14 recipes.
 <!-- recipes:end -->
