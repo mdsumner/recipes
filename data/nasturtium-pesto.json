@@ -1,0 +1,30 @@
+{
+  "name": "Nasturtium pesto",
+  "source_url": "https://larderlove.com/nasturtium-pesto/",
+  "site": "larderlove.com",
+  "description": "A super easy recipe for spicy nasturtium pesto, the taste of summer",
+  "yield": null,
+  "prep_min": 10,
+  "cook_min": 1,
+  "total_min": 11,
+  "ingredients": [
+    "1/2 cup flaked almonds",
+    "1 cup nasturtium flowers",
+    "1 cup nasturtium leaves",
+    "1 clove garlic (minced)",
+    "1/4 cup parmesan (grated)",
+    "salt and pepper",
+    "1/2 cup extra virgin olive oil"
+  ],
+  "steps": [
+    "Toast the flaked almonds in dry pan for 1 minute till golden and aromatic then remove from pan immediately and allow to cool",
+    "Whazz all ingredients in food processor drizzling in the oil till you have the consistancy you prefer"
+  ],
+  "notes": [],
+  "tags": [
+    "pesto",
+    "italian",
+    "nasturtiums"
+  ],
+  "extraction": "jsonld"
+}
