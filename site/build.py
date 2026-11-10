@@ -25,6 +25,7 @@ import yaml
 
 HERE = Path(__file__).resolve().parent
 sys.path.insert(0, str(HERE.parent))
+from harvest.flow import FlowError, ingredients_from_markdown, to_html as flow_html  # noqa: E402
 from harvest.index import read_front_matter  # noqa: E402
 from harvest.text import fmt_minutes, to_ascii  # noqa: E402
 
@@ -59,6 +60,12 @@ def load_recipe(path):
     yield_text = ym.group(1).strip() if ym else fm.get("yield")
     times_text = tm.group(1).strip() if tm else None
     md = markdown.Markdown(extensions=["sane_lists"])
+    flow = ""
+    if fm.get("flow"):
+        try:
+            flow = flow_html(fm["flow"], ingredients_from_markdown(body))
+        except FlowError as e:
+            print("warning: %s: flow skipped: %s" % (path.name, e), file=sys.stderr)
     return {
         "slug": fm.get("slug") or path.stem,
         "title": fm.get("title") or path.stem,
@@ -73,6 +80,7 @@ def load_recipe(path):
         "harvested": str(fm.get("harvested") or ""),
         "extraction": fm.get("extraction", "manual"),
         "html": md.convert(body),
+        "flow": flow,
         "search": to_ascii(re.sub(r"\s+", " ", body)).lower(),
     }
 
@@ -127,6 +135,7 @@ def recipe_page(r, base):
         "<p class=\"tags\">%s</p>" % tag_links(r["tags"], base),
         "<div class=\"toolbar\"><button id=\"wake\" type=\"button\">Keep screen on</button>"
         "<button id=\"reset\" type=\"button\">Untick all</button></div>",
+        "<h2>At a glance</h2>\n%s" % r["flow"] if r["flow"] else "",
         r["html"],
         "<p class=\"source\">Source: <a href=\"%s\">%s</a></p>" % (
             esc(r["source"]), esc(r["site"] or r["source"])) if r["source"] else "",

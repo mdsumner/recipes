@@ -31,6 +31,7 @@ def front_matter(rec, slug, harvested=None):
         "cook_min": rec.get("cook_min"),
         "total_min": rec.get("total_min"),
         "tags": rec.get("tags") or [],
+        "flow": rec.get("flow"),  # hand-written; see harvest/flow.py
     }
     fm = {k: v for k, v in fm.items() if v not in (None, "", [])}
     text = yaml.safe_dump(fm, sort_keys=False, allow_unicode=False, width=1000)

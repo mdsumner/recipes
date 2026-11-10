@@ -51,6 +51,32 @@ Front matter fields: `title`, `slug`, `source`, `site`, `harvested`,
 all land in `tags`; there are deliberately no category directories, a
 recipe is usually several things at once.
 
+## Flow cards
+
+A recipe can carry an optional `flow` in its front matter: which
+ingredients go into which operation. The site renders it as a tabular
+card (ingredients down the left, operations in columns, each operation
+spanning everything that goes into it, the result on the far right),
+the layout popularised by Cooking for Engineers.
+
+    flow:
+      before:
+      - Butter and flour an 8x8-in pan
+      steps:
+      - melt: [1]
+      - mix: [s1, 2, 3, 4]
+      - fold in: [s2, 5, 6]
+      - bake 30-40 min: [s3]
+
+Numbers are ingredients, 1-based, in the order of the Ingredients list;
+`sN` is the output of step N. The last step is the result, every other
+step feeds exactly one later one, and every ingredient appears exactly
+once. `before`/`after` lines span the full width. The harvester cannot
+derive a flow (the schema.org data has no such structure), so flows are
+written by hand; `recipes/espresso-brownies.md` is the worked example and
+`harvest/flow.py` has the layout. A flow that fails validation is skipped
+with a warning at site build.
+
 ## Website
 
 `site/build.py` renders `recipes/*.md` into a static site in `_site/`:
@@ -84,6 +110,7 @@ widely.
 | [Basque Cheesecake](recipes/basque-cheesecake.md) | 12 |  | sweet baking, basque country, spain, basque cheesecake, burnt basque cheesecake | [recipetineats.com](https://www.recipetineats.com/basque-cheesecake/) |
 | [Butter Chicken](recipes/butter-chicken.md) | 3 - 4 | 35m | chicken, curry, indian, butter chicken | [recipetineats.com](https://www.recipetineats.com/butter-chicken/) |
 | [Crispy & sticky chicken thighs with squashed new potatoes & tomatoes](recipes/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes.md) | 4 | 1h25 | chicken, chicken thighs, main ingredient, roast chicken, potato, new potatoes, tomato, lunch & dinner recipes, course, dinner party, occasion, 20 years, tv shows, kosher for passover | [jamieoliver.com](https://www.jamieoliver.com/recipes/chicken/crispy-sticky-chicken-thighs-with-squashed-new-potatoes-tomatoes/) |
+| [Espresso Brownies](recipes/espresso-brownies.md) | 1 8x8-in (20 cm) pan |  | sweet baking, brownies, chocolate, coffee | [cookingforengineers.com](https://www.cookingforengineers.com/recipe/327/Espresso-Brownies) |
 | [Fried Rice](recipes/fried-rice.md) | 2 - 3 people | 15m | side, asian, chinese, fried rice | [recipetineats.com](https://www.recipetineats.com/egg-fried-rice/) |
 | [Gluten-Free Meatloaf](recipes/gluten-free-meatloaf.md) | 8 servings | 1h25 | dinner, main course, american, gluten-free meatloaf | [mamaknowsglutenfree.com](https://www.mamaknowsglutenfree.com/gluten-free-meatloaf/) |
 | [Gluten-Free Vegan Focaccia](recipes/gluten-free-vegan-focaccia.md) | 1 loaf | 2h25 | bread, gluten free, vegan, italian | [The Vegan Harvest](https://theveganharvest.com/2021/04/15/delicious-gluten-free-vegan-focaccia-bread/) |
@@ -99,5 +126,5 @@ widely.
 | [Sticky Baked Chicken Thighs](recipes/sticky-baked-chicken-thighs.md) | 4 people | 30m | mains, baked chicken thighs, boneless skinless chicken thighs | [recipetineats.com](https://www.recipetineats.com/sticky-baked-chicken-thighs/) |
 | [Torta Elvezia (Almond Dacquoise Cake)](recipes/torta-elvezia-almond-dacquoise-cake.md) | 12-13 | 2h | cakes, italian, italian almond cake, torta elvezia, almond dacquoise cake, elvezia cake, gluten-free almond cake, glutenfree | [bakinglikeachef.com](https://www.bakinglikeachef.com/italian-almond-cake-elvezia-montersino/) |
 
-17 recipes.
+18 recipes.
 <!-- recipes:end -->
