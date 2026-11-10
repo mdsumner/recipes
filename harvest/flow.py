@@ -22,8 +22,12 @@ derive one, the schema.org data has no structure for it):
 Each step is a one-key mapping, operation -> inputs. An integer input is an
 ingredient, 1-based, in the order of the Ingredients list. "sN" is the
 output of step N (1-based), which must come earlier. The last step is the
-result; every other step feeds exactly one later step, and each ingredient
-is used at most once. `before` (and optional `after`) lines span the full
+result; every other step feeds exactly one later step.
+
+An ingredient used in parts ("5 tbsp oil, divided") is written as a
+one-key mapping {N: "row text"} at each use, e.g. {6: "2 tbsp olive oil"};
+the row shows that text instead of the ingredient line. An ingredient is
+either used once plainly or only in parts. `before` (and optional `after`) lines span the full
 width above (below) the table.
 
 Table rows follow the tree, not the ingredient list, so the layout is
@@ -45,8 +49,8 @@ _STEP_RE = re.compile(r"^s(\d+)$")
 def parse(flow, n_ingredients):
     """Validate a front-matter flow; return (before, steps, after).
 
-    steps is a list of (label, inputs) with inputs as ("i", k) or ("s", k),
-    both 0-based.
+    steps is a list of (label, inputs) with inputs as ("i", k, text) or
+    ("s", k, None), k 0-based; text is the row text for a part, else None.
     """
     if not isinstance(flow, dict) or not flow.get("steps"):
         raise FlowError("flow needs a non-empty 'steps' list")
@@ -62,16 +66,26 @@ def parse(flow, n_ingredients):
             raise FlowError("step %d (%s) needs a list of inputs" % (n + 1, label))
         parsed = []
         for x in inputs:
+            text = None
+            if isinstance(x, dict):
+                if len(x) != 1:
+                    raise FlowError("step %d: a part must be {N: \"row text\"}" % (n + 1))
+                (x, text), = x.items()
+                text = str(text).strip()
+                if not isinstance(x, int) or isinstance(x, bool) or not text:
+                    raise FlowError("step %d: a part must be {N: \"row text\"}" % (n + 1))
             if isinstance(x, bool):
                 raise FlowError("step %d: bad input %r" % (n + 1, x))
             if isinstance(x, int):
                 k = x - 1
                 if not 0 <= k < n_ingredients:
                     raise FlowError("step %d: no ingredient %d (have %d)" % (n + 1, x, n_ingredients))
-                if k in used_i:
-                    raise FlowError("ingredient %d used by steps %d and %d" % (x, used_i[k] + 1, n + 1))
-                used_i[k] = n
-                parsed.append(("i", k))
+                prev = used_i.get(k)
+                if prev is not None and (text is None or prev[1] is None):
+                    raise FlowError("ingredient %d used by steps %d and %d (write each use as a part)"
+                                    % (x, prev[0] + 1, n + 1))
+                used_i[k] = (n, text)
+                parsed.append(("i", k, text))
                 continue
             m = _STEP_RE.match(str(x).strip())
             if not m:
@@ -82,7 +96,7 @@ def parse(flow, n_ingredients):
             if k in used_s:
                 raise FlowError("s%d used by steps %d and %d" % (k + 1, used_s[k] + 1, n + 1))
             used_s[k] = n
-            parsed.append(("s", k))
+            parsed.append(("s", k, None))
         steps.append((str(label), parsed))
     dangling = [k + 1 for k in range(len(steps) - 1) if k not in used_s]
     if dangling:
@@ -97,13 +111,14 @@ def layout(steps):
     """Place the tree on a grid.
 
     Returns (rows, ncols, cells). rows is the ingredient index for each table
-    row; column 0 holds ingredients and columns 1..ncols-1 operations. cells
+    row (an ingredient used in parts appears once per part); column 0 holds ingredients and columns 1..ncols-1 operations. cells
     is a list of dicts with row, col, rowspan, colspan, kind ("ing", "op",
-    "gap") and value (ingredient index or step index; None for gaps).
+    "gap") and value (ingredient index or step index; None for gaps); "ing"
+    cells also carry text, the row text for a part or None.
     """
     height = []
     for label, inputs in steps:
-        height.append(1 + max([height[k] for t, k in inputs if t == "s"] or [0]))
+        height.append(1 + max([height[k] for t, k, _ in inputs if t == "s"] or [0]))
 
     rows, cells = [], []
 
@@ -112,11 +127,12 @@ def layout(steps):
         h = height[s]
         first = len(rows)
         run = None  # open gap cell for consecutive ingredient inputs
-        for t, k in steps[s][1]:
+        for t, k, text in steps[s][1]:
             if t == "i":
                 r = len(rows)
                 rows.append(k)
-                cells.append(dict(row=r, col=0, rowspan=1, colspan=1, kind="ing", value=k))
+                cells.append(dict(row=r, col=0, rowspan=1, colspan=1, kind="ing", value=k,
+                                  text=text))
                 if h > 1:
                     if run is None:
                         run = dict(row=r, col=1, rowspan=1, colspan=h - 1, kind="gap", value=None)
@@ -161,7 +177,7 @@ def to_html(flow, ingredients):
         tds = []
         for c in sorted(by_row.get(r, []), key=lambda c: c["col"]):
             if c["kind"] == "ing":
-                tds.append("<td class=\"ing\">%s</td>" % esc(ingredients[c["value"]]))
+                tds.append("<td class=\"ing\">%s</td>" % esc(c["text"] or ingredients[c["value"]]))
             elif c["kind"] == "op":
                 tds.append("<td class=\"op\"%s>%s</td>" % (span(c), esc(steps[c["value"]][0])))
             else:

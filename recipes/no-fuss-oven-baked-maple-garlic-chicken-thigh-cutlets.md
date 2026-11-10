@@ -13,6 +13,14 @@ tags:
 - main course
 - belly rumbles original
 - no fuss oven baked
+flow:
+  before:
+  - "Preheat oven to 180 C (360 F)"
+  - "Line shallow tray with baking paper"
+  steps:
+  - "mix": [2, 3, 4, 5]
+  - "bone side down on tray, spread over": [1, s1]
+  - "bake 45 min, basting": [s2]
 ---
 
 # No Fuss Oven Baked Maple Garlic Chicken Thigh Cutlets

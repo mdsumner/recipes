@@ -8,6 +8,11 @@ extraction: jsonld
 yield: Makes 4 cocktails (easily multiplied)
 prep_min: 2
 total_min: 2
+flow:
+  steps:
+  - "divide among 4 flutes": [1]
+  - "top up": [s1, 2]
+  - "garnish": [s2, 3, 4]
 ---
 
 # Pink Lemonade Mimosas

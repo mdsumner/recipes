@@ -10,6 +10,19 @@ prep_min: 15
 cook_min: 40
 total_min: 145
 tags: [bread, gluten free, vegan, italian]
+flow:
+  steps:
+  - "whisk": [1, 2, 3, 4]
+  - "mix": [5, {6: "2 tbsp olive oil"}]
+  - "add slowly on low, beat 5 min": [s1, s2]
+  - "cover, rise 1-1.5 h": [s3]
+  - "oil pan": [{6: "2 tbsp olive oil"}]
+  - "knock down, turn into pan, spread, dimple": [s4, s5]
+  - "drizzle, sprinkle": [s6, {6: "1 tbsp olive oil"}, 7, 8]
+  - "cover, rise 30 min; heat oven to 400 F": [s7]
+  - "bake 35-40 min": [s8]
+  after:
+  - "Cool at least 1 h before cutting"
 ---
 
 # Gluten-Free Vegan Focaccia

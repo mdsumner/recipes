@@ -8,6 +8,16 @@ extraction: jsonld
 yield: '4'
 cook_min: 30
 total_min: 30
+flow:
+  before:
+  - "Preheat oven to 180 C (160 C fan)"
+  - "Grease and line 23 cm square slab pan"
+  steps:
+  - "pour into pan, sprinkle over evenly": [1, 2, 3, 4, 5]
+  - "drizzle over": [s1, 6]
+  - "bake about 30 min": [s2]
+  after:
+  - "Cool in pan, cut into squares, keep refrigerated"
 ---
 
 # No-bowl choc-bit slice

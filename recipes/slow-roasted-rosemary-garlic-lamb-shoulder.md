@@ -16,6 +16,19 @@ tags:
 - lamb shoulder
 - roast lamb shoulder
 - slow roasted lamb
+flow:
+  before:
+  - "Preheat oven to 240 C / 465 F (220 C fan)"
+  steps:
+  - "rub all over": [1, 2, 3, 4]
+  - "cut 12 deep slits, stuff": [s1, 7, {8: "a few of the rosemary sprigs"}]
+  - "into roasting pan, lamb on top, water around": [5, 6, {8: "rest of the rosemary sprigs"}, s2, 9]
+  - "cover, roast 180 C (160 C fan) 3 h": [s3]
+  - "uncover, roast 220 C 20-30 min": [s4]
+  - "lift out lamb to rest; skim pan to 2 tbsp fat": [s5]
+  - "stir in, cook 30 s": [s6, 10]
+  - "stir in, mash garlic, simmer 1-2 min": [s7, 11]
+  - "season, strain, serve with lamb": [s8, 12]
 ---
 
 # Slow Roasted Rosemary Garlic Lamb Shoulder

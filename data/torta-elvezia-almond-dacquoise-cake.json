@@ -52,5 +52,85 @@
     "gluten-free almond cake",
     "glutenfree"
   ],
-  "extraction": "jsonld"
+  "extraction": "jsonld",
+  "flow": {
+    "before": [
+      "Preheat oven to 180 C (355 F)",
+      "Draw three 22 cm circles on baking paper"
+    ],
+    "steps": [
+      {
+        "whisk over low heat to warm": [
+          1,
+          2
+        ]
+      },
+      {
+        "whip 5-7 min to a glossy meringue": [
+          "s1"
+        ]
+      },
+      {
+        "process until even": [
+          3,
+          4,
+          5
+        ]
+      },
+      {
+        "fold in, 2-3 additions": [
+          "s2",
+          "s3"
+        ]
+      },
+      {
+        "pipe 3 discs, bake 12-15 min, cool": [
+          "s4"
+        ]
+      },
+      {
+        "trim to circles": [
+          "s5"
+        ]
+      },
+      {
+        "whisk": [
+          7,
+          11
+        ]
+      },
+      {
+        "boil to 121 C": [
+          6,
+          8,
+          9
+        ]
+      },
+      {
+        "pour in whisking, cool until pale": [
+          "s7",
+          "s8"
+        ]
+      },
+      {
+        "beat in a cube at a time": [
+          "s9",
+          10
+        ]
+      },
+      {
+        "layer discs with cream and almonds, cover top and sides": [
+          "s6",
+          "s10",
+          12
+        ]
+      },
+      {
+        "dust, chill 2 h+": [
+          "s11",
+          13
+        ]
+      }
+    ]
+  }
 }

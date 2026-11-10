@@ -14,6 +14,21 @@ tags:
 - spain
 - basque cheesecake
 - burnt basque cheesecake
+flow:
+  before:
+  - "Preheat oven to 220 C / 425 F (200 C fan)"
+  - "Line 20 cm springform pan with scrunched paper"
+  steps:
+  - "beat, medium, 2 min": [1]
+  - "beat in, low, 10 s": [s1, 2]
+  - "whisk to a paste": [{3: "about 1/4 of the whipping cream"}, 4]
+  - "whisk in": [s3, {3: "rest of the whipping cream"}, 5]
+  - "pour in slowly, beating on low": [s2, s4]
+  - "pour in, beat until just combined": [s5, 6]
+  - "pour into pan, bang out bubbles": [s6]
+  - "bake 45-65 min until deep golden": [s7]
+  after:
+  - "Cool 2 h on the counter, then chill 8 h+ uncovered"
 ---
 
 # Basque Cheesecake

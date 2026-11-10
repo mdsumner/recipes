@@ -71,7 +71,9 @@ the layout popularised by Cooking for Engineers.
 Numbers are ingredients, 1-based, in the order of the Ingredients list;
 `sN` is the output of step N. The last step is the result, every other
 step feeds exactly one later one, and every ingredient appears exactly
-once. `before`/`after` lines span the full width. The harvester cannot
+once, or in parts: an ingredient split across steps ("5 tbsp oil,
+divided") is written `{6: "2 tbsp olive oil"}` at each use, and the row
+shows that text. `before`/`after` lines span the full width. The harvester cannot
 derive a flow (the schema.org data has no such structure), so flows are
 written by hand; `recipes/espresso-brownies.md` is the worked example and
 `harvest/flow.py` has the layout. A flow that fails validation is skipped

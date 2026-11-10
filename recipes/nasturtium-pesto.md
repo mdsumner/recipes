@@ -12,6 +12,10 @@ tags:
 - pesto
 - italian
 - nasturtiums
+flow:
+  steps:
+  - "toast in dry pan 1 min, cool": [1]
+  - "process, drizzling in the oil": [s1, 2, 3, 4, 5, 6, 7]
 ---
 
 # Nasturtium pesto
