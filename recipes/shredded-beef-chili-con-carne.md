@@ -19,6 +19,18 @@ tags:
 - pulled beef chili
 - shredded beef chilli con carne
 - slow cooker chili
+flow:
+  steps:
+  - "cut in 4, season": [1, 3]
+  - "brown all over, high": [s1, {2: "1 tbsp olive oil"}]
+  - "saute 2-3 min": [{2: "rest of the olive oil"}, 4, 5, 6]
+  - "deglaze, simmer 30 s": [s3, 7]
+  - "slow cook, low, 8 h": [s4, 8, 9, 10, 11, 12, 13, 14, 15, s2]
+  - "lift out beef, shred": [s5]
+  - "mix": [16, 17]
+  - "stir in with beef, cook 20 min": [s6, s7]
+  after:
+  - "Adjust salt and pepper; serve with garnishes"
 ---
 
 # Shredded Beef Chili Con Carne

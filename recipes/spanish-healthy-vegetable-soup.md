@@ -15,6 +15,15 @@ tags:
 - spanish style
 - western
 - healthy vegetable soup
+flow:
+  steps:
+  - "cook 30 s, medium": [1, 2, 3]
+  - "cook 2 min": [s1, 4, 5]
+  - "cook 8 min, medium-low": [s2, 6, 7]
+  - "cook 2 min, high": [s3, 8]
+  - "simmer covered 25 min": [s4, 9, 10, 11, 12, 13]
+  - "season": [s5, 14]
+  - "ladle, top with zest, juice, parsley": [s6, 15, 16]
 ---
 
 # Spanish Healthy Vegetable Soup

@@ -39,5 +39,56 @@
     "chinese",
     "fried rice"
   ],
-  "extraction": "jsonld"
+  "extraction": "jsonld",
+  "flow": {
+    "steps": [
+      {
+        "heat until smoking, high": [
+          {
+            "1": "1 1/2 tbsp oil"
+          }
+        ]
+      },
+      {
+        "cook 1 1/2 min": [
+          "s1",
+          2,
+          3,
+          4
+        ]
+      },
+      {
+        "cook 2 min": [
+          "s2",
+          5
+        ]
+      },
+      {
+        "cook 1 1/2 min": [
+          "s3",
+          6,
+          9,
+          10,
+          11,
+          12,
+          13
+        ]
+      },
+      {
+        "push rice aside, scramble egg in the space": [
+          "s4",
+          {
+            "1": "1/2 tbsp oil"
+          },
+          7
+        ]
+      },
+      {
+        "stir through, serve at once": [
+          "s5",
+          8
+        ]
+      }
+    ]
+  }
 }

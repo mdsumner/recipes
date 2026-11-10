@@ -14,6 +14,19 @@ tags:
 - western
 - blueberry muffins
 - blueberry recipes
+flow:
+  before:
+  - "Preheat oven to 200 C / 390 F"
+  - "Line 12-hole muffin tin"
+  steps:
+  - "whisk": [1, 2, 3, 4, 5]
+  - "whisk": [6, 7, 8, 9, 10]
+  - "mix until just combined": [s1, s2]
+  - "stir through": [s3, {11: "most of the blueberries"}]
+  - "divide into cases, top": [s4, {11: "rest of the blueberries"}]
+  - "bake 5 min, then 180 C 13-15 min": [s5]
+  after:
+  - "Turn out onto a rack straight away"
 ---
 
 # Moist Blueberry Muffins

@@ -17,6 +17,16 @@ tags:
 - barbecue pork ribs
 - oven pork ribs
 - spice rub for pork ribs
+flow:
+  steps:
+  - "mix": [1, 2, 3, 4, 5, 6, 7, 8]
+  - "rub on, rest 20 min+": [s1, 9]
+  - "pour under, cover, bake 160 C 1 h 30": [s2, 10]
+  - "uncover, drizzle, bake 180 C 15 min": [s3, 11]
+  - "simmer 45 min until thick": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22]
+  - "glaze, bake 10 min; turn, glaze, bake 5 min, 3-4 times": [s4, s5]
+  after:
+  - "Cut into portions, serve with remaining sauce"
 ---
 
 # Oven Pork Ribs with Barbecue Sauce

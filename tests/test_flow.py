@@ -76,3 +76,14 @@ def test_html_and_ingredients():
     out = to_html({"before": ["heat"], "steps": [{"mix & stir": [1, 2]}]}, ings)
     assert 'rowspan="2"' in out and "mix &amp; stir" in out and 'colspan="2">heat' in out
     assert out.isascii()
+
+
+def test_parts():
+    flow = {"steps": [{"oil pan": [{1: "2 tbsp oil"}]},
+                      {"toss": ["s1", 2, {1: "1 tbsp oil"}]}]}
+    out = to_html(flow, ["3 tbsp oil", "kale"])
+    assert out.count("tbsp oil</td>") == 2 and "3 tbsp oil" not in out
+    with pytest.raises(FlowError, match="as a part"):
+        parse({"steps": [{"a": [1]}, {"b": ["s1", {1: "x"}, 2]}]}, 2)
+    with pytest.raises(FlowError, match="row text"):
+        parse({"steps": [{"a": [{1: ""}, 2]}]}, 2)

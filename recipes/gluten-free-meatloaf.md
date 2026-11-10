@@ -14,6 +14,19 @@ tags:
 - main course
 - american
 - gluten-free meatloaf
+flow:
+  before:
+  - "Preheat oven to 350 F"
+  - "Line 8x4-in loaf pan"
+  steps:
+  - "stir, stand 2-3 min": [2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
+  - "mix by hand, gently": [s1, 1]
+  - "press into pan": [s2]
+  - "stir": [15, 16, 17]
+  - "spread over": [s3, s4]
+  - "bake 1 h 15 min (160 F inside)": [s5]
+  after:
+  - "Rest 10 min before slicing"
 ---
 
 # Gluten-Free Meatloaf

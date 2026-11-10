@@ -13,6 +13,17 @@ tags:
 - mains
 - baked chicken thighs
 - boneless skinless chicken thighs
+flow:
+  before:
+  - "Preheat oven to 220 C / 420 F (200 C fan)"
+  - "Line pan with foil"
+  steps:
+  - "mix": [2, 3, 4, 5, 6, 7, 8]
+  - "lay flat, spoon 2/3 of glaze on top": [1, s1]
+  - "bake 15 min": [s2]
+  - "baste, dab on rest of glaze, grill high 8-10 min": [s3]
+  after:
+  - "Rest a few minutes, serve with pan juices"
 ---
 
 # Sticky Baked Chicken Thighs

@@ -44,5 +44,55 @@
     "indian",
     "butter chicken"
   ],
-  "extraction": "jsonld"
+  "extraction": "jsonld",
+  "flow": {
+    "steps": [
+      {
+        "combine": [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          7,
+          8
+        ]
+      },
+      {
+        "coat, chill 3-24 h": [
+          "s1",
+          9
+        ]
+      },
+      {
+        "heat in large pan, high": [
+          10
+        ]
+      },
+      {
+        "fry 3 min until white": [
+          "s2",
+          "s3"
+        ]
+      },
+      {
+        "add with leftover marinade, simmer 20 min, low": [
+          "s4",
+          11,
+          12,
+          13,
+          14
+        ]
+      },
+      {
+        "garnish, serve with rice": [
+          "s5",
+          15,
+          16,
+          17
+        ]
+      }
+    ]
+  }
 }

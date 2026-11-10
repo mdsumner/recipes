@@ -112,7 +112,7 @@ p + p { margin-top: .4rem; }
 .flow { overflow-x: auto; margin: .5rem 0 1rem; }
 .flow table { border-collapse: collapse; font-size: .95rem; background: var(--card); }
 .flow td { border: 2px solid var(--accent); padding: .3rem .6rem; vertical-align: middle; }
-.flow td.ing { min-width: 14rem; }
+.flow td.ing { min-width: 11rem; }
 .flow td.op { text-align: center; min-width: 4.5rem; max-width: 9rem; }
 .flow td.pre { text-align: center; }
 .flow td.gap { padding: 0; }

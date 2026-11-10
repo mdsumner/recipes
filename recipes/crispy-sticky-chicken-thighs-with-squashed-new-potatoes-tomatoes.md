@@ -23,6 +23,19 @@ tags:
 - 20 years
 - tv shows
 - kosher for passover
+flow:
+  before:
+  - "Preheat oven to 200 C / 400 F / gas 6"
+  steps:
+  - "boil in salted water until cooked": [1]
+  - "drain, lightly crush": [s1]
+  - "cut in 3 strips, season, toss": [2, 3]
+  - "fry skin down, low, 10 min": [s3]
+  - "prick, blanch 1 min, peel": [4]
+  - "pound with a pinch of salt": [{5: "most of the oregano leaves"}]
+  - "bash in with pepper": [s6, {6: "4 tbsp extra virgin olive oil"}, 7]
+  - "toss together in roasting tray": [s2, s4, s5, s7, {5: "rest of the oregano leaves"}]
+  - "bake in one layer 40 min": [s8]
 ---
 
 # Crispy & sticky chicken thighs with squashed new potatoes & tomatoes
